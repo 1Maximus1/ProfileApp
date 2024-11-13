@@ -1,0 +1,18 @@
+﻿<html>
+<head>
+    <title>MVC Project</title>
+    <meta charset=utf-8 />
+</head>
+<body>
+    <h1>Hobby</h1>
+    <p>Name: @Model.Name</p>
+    <p>Surname: @Model.Surname</p>
+    <p>Hobby:</p>
+    <ul>
+        @foreach (var hobby in Model.Hobby)
+        {
+            <li>@hobby</li>
+        }
+    </ul>
+</body>
+</html>
